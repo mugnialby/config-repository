@@ -1,7 +1,13 @@
 spring:
   logging:
+    level:
+      root: "debug"
+      org:
+        springframework:
+          web: "debug"
+      hibernate: "debug"
     file:
-      path: "./logs"
+      path: "."
   datasource:
     hikari:
       connectionTimeout: 20000
