@@ -1,6 +1,8 @@
 # APPLICATION CONFIG
 spring:
   logging:
+    level:
+      root: "debug"
     file:
       path: "."
   cloud:
