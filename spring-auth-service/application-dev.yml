@@ -1,11 +1,5 @@
 # APPLICATION CONFIG
 spring:
-#  profiles:
-#    active: "dev"
-  application:
-    name: "spring-auth-service"
-    admin:
-      enabled: false
   rabbitmq:
     host: "localhost"
     port: "5672"
