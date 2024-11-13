@@ -1,7 +1,7 @@
 # APPLICATION CONFIG
 spring:
-  profiles:
-    active: "dev"
+#  profiles:
+#    active: "dev"
   application:
     name: "spring-auth-service"
     admin:
