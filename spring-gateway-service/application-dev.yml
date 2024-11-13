@@ -2,7 +2,7 @@
 spring:
   logging:
     level:
-      root: "debug"
+      root: "trace"
     file:
       path: "."
   cloud:
