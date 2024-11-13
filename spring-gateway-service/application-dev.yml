@@ -1,10 +1,5 @@
 # APPLICATION CONFIG
 spring:
-  logging:
-    level:
-      root: "trace"
-    file:
-      path: "."
   cloud:
     gateway:
       routes:
@@ -27,6 +22,9 @@ spring:
                 name: "userCircuitBreaker"
                 fallbackuri: forward:/api/v1/fallback/
             - AuthorizationFilter
+logging:
+  level:
+    root: "TRACE"
 server:
   port: 7000
   error:
