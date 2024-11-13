@@ -7,7 +7,7 @@ spring:
     password: "guest"
   logging:
     file:
-      path: "./logs"
+      path: "."
 
 server:
   port: 7002
