@@ -19,7 +19,7 @@ spring:
     password: "guest"
 
 server:
-  port: 7002
+  port: 7003
   error:
     include-message: "always"
 
