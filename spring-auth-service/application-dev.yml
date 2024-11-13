@@ -1,21 +1,29 @@
 # APPLICATION CONFIG
+spring:
+  profiles:
+    active: "dev"
+  application:
+    name: "spring-auth-service"
+    admin:
+      enabled: false
+  rabbitmq:
+    host: "localhost"
+    port: "5672"
+    username: "guest"
+    password: "guest"
+
 server:
   port: 7002
   error:
     include-message: "always"
   bcrypt:
     salt: "$2a$10$XPpFJsWa/UwoSH0Wczxvnu"
+
 jwt:
   key:
     secret: "YjdqN3ZEbGhYanJtODJsUkRKQlZTV0djOTRLWUU0dlY="
     api: "OXdNMndxY2FXZGpaaXloWWdhbzZJbUxsSzFhaExVR1o="
   expiration: 1
-spring:
-  rabbitmq:
-    host: "localhost"
-    port: "5672"
-    username: "guest"
-    password: "guest"
 
 rabbitmq:
   queue:
