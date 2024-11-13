@@ -2,7 +2,7 @@
 spring:
   logging:
     file:
-      path: "./logs"
+      path: "."
   cloud:
     gateway:
       routes:
