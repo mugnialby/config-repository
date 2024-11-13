@@ -1,4 +1,7 @@
 spring:
+  logging:
+    file:
+      path: "./logs"
   datasource:
     hikari:
       connectionTimeout: 20000

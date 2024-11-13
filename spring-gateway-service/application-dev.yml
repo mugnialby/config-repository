@@ -1,5 +1,8 @@
 # APPLICATION CONFIG
 spring:
+  logging:
+    file:
+      path: "./logs"
   cloud:
     gateway:
       routes:

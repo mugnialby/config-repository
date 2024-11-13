@@ -5,6 +5,9 @@ spring:
     port: "5672"
     username: "guest"
     password: "guest"
+  logging:
+    file:
+      path: "./logs"
 
 server:
   port: 7002
