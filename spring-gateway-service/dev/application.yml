@@ -28,18 +28,18 @@ spring:
                 name: "userCircuitBreaker"
                 fallbackuri: forward:/api/v1/fallback/
             - AuthorizationFilter
-logging:
-  level:
-    root: "INFO"
-  file:
-    name: "logs/${spring.application.name}-${today:dd-MM-yyyy}-logs.log"
-  pattern:
-  logback:
-    rollingpolicy:
-      file-name-pattern: "logs/%d{yyyy-MM, aux}/${spring.application.name}.%d{dd-MM-yyyy}.%i.log"
-      max-file-size: "10MB"
-      total-size-cap: "1GB"
-      max-history: 10
+#logging:
+#  level:
+#    root: "INFO"
+#  file:
+#    name: "logs/${spring.application.name}-${today:dd-MM-yyyy}-logs.log"
+#  pattern:
+#  logback:
+#    rollingpolicy:
+#      file-name-pattern: "logs/%d{yyyy-MM, aux}/${spring.application.name}.%d{dd-MM-yyyy}.%i.log"
+#      max-file-size: "10MB"
+#      total-size-cap: "1GB"
+#      max-history: 10
 server:
   port: 7000
   error:
