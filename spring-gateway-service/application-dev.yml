@@ -26,7 +26,7 @@ logging:
   level:
     root: "TRACE"
   file:
-    name: "logs/spring-gateway-service-logs.log"
+    name: "logs/${spring.application.name}-%d{dd-mm-yyyy}-logs.log"
   logback:
     rollingpolicy:
       file-name-pattern: "logs/%d{yyyy-MM, aux}/app.%d{yyyy-MM-dd}.%i.log"
