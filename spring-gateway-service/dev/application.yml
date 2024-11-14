@@ -1,5 +1,11 @@
 # APPLICATION CONFIG
 spring:
+  profiles:
+    active: "dev"
+  application:
+    name: "spring-gateway-service"
+    admin:
+      enabled: false
   cloud:
     gateway:
       routes:
