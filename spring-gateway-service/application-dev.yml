@@ -24,13 +24,13 @@ spring:
             - AuthorizationFilter
 logging:
   level:
-    root: "TRACE"
+    root: "INFO"
   file:
     name: "logs/${spring.application.name}-${today:dd-MM-yyyy}-logs.log"
   logback:
     rollingpolicy:
       file-name-pattern: "logs/%d{yyyy-MM, aux}/${spring.application.name}.%d{dd-MM-yyyy}.%i.log"
-      max-file-size: "100KB"
+      max-file-size: "10MB"
       total-size-cap: "10GB"
       max-history: 10
 server:
