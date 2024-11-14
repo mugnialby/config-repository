@@ -25,6 +25,8 @@ spring:
 logging:
   level:
     root: "TRACE"
+  file:
+    name: "./logs/spring-gateway-service-logs"
 server:
   port: 7000
   error:
